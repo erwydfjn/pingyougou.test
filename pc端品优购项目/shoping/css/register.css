@@ -1,0 +1,122 @@
+.w{
+    width: 1200px;
+    margin: 0 auto
+}
+.header{
+    height: 84px;
+    border-bottom: 2px solid #b1191a;
+}
+.logo{
+    padding-top: 18px;
+    /* 注意这里最好用padding，用margin可能造成外边距塌陷 */
+
+}
+.registerarea{
+    height: 522px;
+    border:  1px solid #ccc;
+}
+.registerarea h3{
+    height: 42px;
+    border-bottom: 1px solid #ccc;
+    background-color: #ececec;
+    font-size: 18px;
+    line-height: 42px;
+    padding:0 10px;
+    font-weight: 400;
+}
+.logoin{
+    float: right;
+    font-size: 14px;
+}
+.logoin a{
+    color: #c81623;
+}
+.reg-form{
+    width: 600px;
+    margin: 50px auto 0;
+    /* background-color: pink; */
+}
+.reg-form ul li label{
+    display: inline-block;
+    width: 88px;
+    text-align: right;
+    font-size: 12px;
+}
+.reg-form ul li{
+    margin-bottom: 20px;
+}
+.reg-form ul li .inp{
+    width: 242px;
+    height: 37px;
+    border: 1px solid #ccc;
+}
+.error{
+    color: #b1191a;
+}
+.error_icons,
+.success_icons{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/error-icons.png) no-repeat;
+    vertical-align: middle;
+    /* 使文字与行内块元素居中对齐显示 */
+    margin-top: -2px;
+}
+.success_icons{
+    background: url(../images/success-icons.png) no-repeat;
+}
+.success{
+    color: #40b83f;
+}
+.safe em{
+    padding: 0 12px;
+    /* 通过内边距挤开高度 */
+    /* background-color: pink; */
+    color: #ffffff;
+}
+.ruo{
+background-color: #de1111;
+}
+.zhong{
+background-color: #40b83f;
+}
+.qiang{
+background-color: #f79100;
+}
+.safe{
+    padding-left: 162px;
+}
+.agree input{
+    /* 让行内块元素与文字对齐 */
+    vertical-align: middle;
+
+}
+.agree{
+    padding-left: 90px;
+}
+.agree a{
+    color: #1ba1e6;
+}
+.btn
+{
+    width: 300px;
+    height: 34px;
+    background-color: #c81623;
+    margin: 30px 0 0 90px;
+    color: #fff;
+    font-size: 14px;
+}
+.mod_copyright{
+    text-align: center;
+    padding-top: 20px;
+}
+.mod_copyright .links{
+    margin-bottom: 15px;
+}
+.mod_copyright .copyright{
+    line-height: 20px;
+}
+.links a{
+    margin: 0 3px;
+}

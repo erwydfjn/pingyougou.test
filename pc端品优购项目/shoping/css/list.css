@@ -1,0 +1,138 @@
+/* 列表页专有的CSS */
+.nav{
+    overflow: hidden;
+    /* 防止因为line-height调整高度影响到下面的盒子 */
+}
+.sk{
+    position: absolute;
+    left: 190px;
+    top: 40px;
+    border-left: 1px solid #c81523;
+    padding: 3px 0 0 14px;
+}
+.sk_list{
+    float: left;
+}
+.sk_con{
+    float: left;
+}
+.sk_list ul li{
+    float: left;
+    color: #000000;
+}
+.sk_list ul li a{
+    font-size: 16px;
+    font-weight: 700;
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+    display: block;
+    padding: 0 30px;
+}
+.sk_con ul li{
+    float: left;
+}
+.sk_con ul li a{
+    height: 47px;
+    /* 可以通过调整行高来对齐前面 */
+    line-height: 50px;
+    display: block;
+    font-size: 14px;
+    padding: 0 20px;
+}
+.sk_con ul li:nth-child(9) a::after{
+    content: '\e91e';
+    font-family: 'icomoon';
+}
+.sk_bd ul{
+    /* float: left; */
+    margin-right: 6px;
+    display: inline-block;
+    /*可以不用转换为行内块元素，这里也可以通过浮动然后调用初始化样式中的清除浮动来解决 */
+}
+.sk_hd ul:nth-child(4n){
+    margin: 0;
+}
+.sk_bd ul li{
+    overflow: hidden;
+    /* 因为是c3盒子，会自动撑大盒子，这个也是为了边框，隐藏多于部分 */
+    width: 290px;
+    height: 460px;
+    border: 1px solid transparent;
+    /* 注意li本来就有1px的边框，为了避免通过hover再加一个边框会影响盒子大小从而使图片发生位移。 */
+}
+.sk_bd ul li:hover{
+    /* 通过上面的样式，这句样式的目的只是在鼠标经过时将边框的颜色改变，而不会影响盒子本身的大小 */
+    border: 1px solid #c81523;
+}
+.sk_bd ul li p{
+    display: block;
+    padding-left: 5px;
+    padding-top: 26px;
+    font-size: 14px;
+}
+.sk_bd ul li span{
+    font-size: 22px;
+    color: #e9424b;
+    padding: 0 5px;
+}
+.sk_bd ul li span::before{
+    content: '¥';
+    font-size: 14px;
+    color: #e9424b;
+}
+.sk_bd ul li span::after{
+    content: '¥6988';
+    font-size: 14px;
+    color: #a4a4a4;
+    text-decoration: line-through;
+    padding-left: 5px;
+}
+.schedule{
+    width: 280px;
+    height: 20px;
+}
+.sc_bd{
+    width: 132px;
+    height: 18px;
+    border: 1px solid red;
+    border-radius: 9px;
+    margin-left: 10px;
+    float: left;
+}
+.sc_bd_in{
+    width: 100px;
+    height: 100%;
+    background-color: red;
+    border-radius: 8px;
+    float: left;
+}
+.sc_hd{
+    color: red;
+    font-size: 14px;
+}
+.out{
+    float: left;
+    font-size: 14px;
+}
+.sc_hd::before{
+    content: '剩余';
+    font-size: 14px;
+    color: #c1c1c1;
+    margin-left: 10px;
+}
+.sc_hd::after{
+    content: '件';
+    font-size: 14px;
+    color: #c1c1c1;
+}
+.bottom{
+    width: 290px;
+    height: 50px;
+    background-color: #b1191a;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    color: #ffffff;
+}
+
